@@ -1,0 +1,14 @@
+numero_convidados = input('Insira o numero de convidados: ')
+lista_convidados = []
+
+i = 1
+
+while i <= int(numero_convidados):
+    nome_convidado = input('Insira o nome do convidado de número #' + str(i) + ': ')
+    lista_convidados.append(nome_convidado)
+    i += 1
+
+print('Serão', numero_convidados, 'convidados.')
+print('\n')
+for convidado in lista_convidados:
+    print(convidado)
